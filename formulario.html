@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="icon" href="./src/img/icon.png">
+</head>
+<body>
+    <form>
+        
+    <div>
+        <label for="nome">Nome</label><br>
+        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
+    </div>
+    <br>
+    <div>
+        <label for="email">E-mail</label><br>
+        <input type="text" name="email" id="email" placeholder="Digite aqui seu E-mail" required>
+    </div>
+    <br>
+    <div>
+        <label for="descricao">Descrição</label><br>
+        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Fale mais sobre você aqui..."></textarea>
+    </div>
+    <br>
+    <div>
+        <label for="modulo">Selecione seu Modulo</label><br>
+        <select name="modulo" id="modulo">
+            <option value="">Escolher Modulo</option>
+            <option value="1">Modulo 1</option>
+            <option value="2">Modulo 2</option>
+            <option value="3">Modulo 3</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="senha">Digite sua senha</label><br>
+        <input type="password" id="senha" name="senha" required placeholder="Digite aqui a sua senha">
+    </div>
+    <br>
+    <div>
+        <label for="confirmacao">Confirme sua senha</label><br>
+        <input type="password" name="confirmacao" id="confirmacao" required placeholder="Confirme sua senha">
+    </div>
+    <br>
+    <div>
+        <label for="">Deseja receber novidade em seu e-mail?</label><br>
+        <label for="sim">Sim</label>
+        <input type="radio" value="sim" name="inputexemplo" id="sim" required>
+        <label for="nao">Não</label>
+        <input type="radio" value="nao" name="inputexemplo" id="nao">
+    </div>
+    <br>
+    <button type="submit" aria-required="true">Cadastrar</button>
+    </form>
+</body>
+</html>
